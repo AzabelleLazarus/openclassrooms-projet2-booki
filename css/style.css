@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    margin: 0;
 }
 
 :root {
@@ -25,6 +26,10 @@ body {
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -33,6 +38,7 @@ a {
 .section-title {
     margin: 0;
     font-size: 22px;
+    font-weight: 700;
 }
 
 .card {
@@ -48,6 +54,7 @@ a {
 
 .card-title {
     font-size: 16px;
+    font-weight: 700;
 }
 
 .euro {
@@ -55,7 +62,44 @@ a {
 }
 
 .neutral-star {
-    color: var(--main-bg-color)
+    color: var(--main-bg-color);
+}
+
+/****** header : Navigation et logo ***********/
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 79px;
+}
+
+#logo {
+    padding: 30px 50px 30px 50px;
+}
+
+#menu {
+    display: flex;
+    padding: 15px 50px 0px 50px; 
+    gap: 68px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#menu a {
+    padding-top: 13px; 
+}
+
+nav a:hover {
+    color:var(--main-color);
+    border-top: 2px solid var(--main-color);
+}
+
+/****** header : titre h1 et bouton recherche ***********/
+
+
+/****** main : filtres et infos ***********/
+.filter-title {
+    font-size: 18px;
+    font-weight: 700;  
 }
 
 /****** Hebergements And Populaires ***********/
@@ -121,7 +165,11 @@ a {
     margin-bottom: 5px;
 }
 
-
+/****** Footer ***********/
+h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
